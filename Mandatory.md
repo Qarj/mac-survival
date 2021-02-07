@@ -24,6 +24,24 @@ sudo defaults write com.apple.finder AppleShowAllFiles YES; killall Finder
 sudo spctl --master-disable
 ```
 
+## Bash
+
+```
+nano ~/.bash_profile
+```
+
+Add to end of `.bash_profile`
+
+```
+export PS1='\u@\H:\w$ '
+```
+
+To activate immediately
+
+```
+source ~/.bash_profile
+```
+
 ## Git
 
 ```
