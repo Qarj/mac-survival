@@ -1,5 +1,11 @@
 # Setup and Start Text Editors
 
+## Code
+
+Install from https://code.visualstudio.com/docs/setup/mac
+
+`CTRL-SHIFT-P` (after mandatory keyboard mods) then type `shell command`
+
 ## Sublime 3
 
 https://www.sublimetext.com/
