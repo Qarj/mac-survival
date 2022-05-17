@@ -6,6 +6,18 @@ Install from https://code.visualstudio.com/docs/setup/mac
 
 `CTRL-SHIFT-P` (after mandatory keyboard mods) then type `shell command`
 
+or 
+
+`SUPER-SHIFT-P` depending on keyboard mods
+
+May need to 
+
+```sh
+sudo unlink /usr/local/bin/code
+```
+
+if Visual Studio Code was launched from the Downloads folder and later moved to the Applications folder.
+
 ## Sublime 3
 
 https://www.sublimetext.com/
