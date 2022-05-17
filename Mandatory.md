@@ -119,6 +119,8 @@ Be sure to run the "Run apps from anywhere" above else meld won't run.
 
 ## Add colour to ls output
 
+https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/
+
 ```sh
 nano ~/.bash_profile
 ```
