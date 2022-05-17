@@ -116,3 +116,18 @@ brew install --cask meld
 ```
 
 Be sure to run the "Run apps from anywhere" above else meld won't run.
+
+## Add colour to ls output
+
+```sh
+nano ~/.bash_profile
+```
+
+Copy paste to end
+
+```sh
+# coloured ls output
+export CLICOLOR=1
+alias ls='ls -G'
+alias ll='ls -lG'
+```
