@@ -10,7 +10,6 @@ sudo rm /Library/Preferences/com.apple.keyboardtype.plist
 
 Reboot. Preferences -> Keyboard
 
-
 ## Keyboard
 
 System Preferences -> Language & Region -> Keyboard Preferences
@@ -60,13 +59,13 @@ System Preferences -> Mouse -> uncheck `Scroll direction: Natural`
 
 See hidden folders
 
-```
+```sh
 sudo defaults write com.apple.finder AppleShowAllFiles YES; killall Finder
 ```
 
 ## Run apps from anywhere
 
-```
+```sh
 sudo spctl --master-disable
 ```
 
@@ -104,15 +103,16 @@ Or for a simpler prompt
 export PS1='\w$ '
 ```
 
-
 ## Brew
 
-```
+```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ## Meld
 
-```
+```sh
 brew install --cask meld
 ```
+
+Be sure to run the "Run apps from anywhere" above else meld won't run.
