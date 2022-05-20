@@ -103,6 +103,16 @@ Or for a simpler prompt
 export PS1='\w$ '
 ```
 
+# Disable com.apple.quarantine extended attribute for downloaded files by Brew and others
+
+```sh
+sudo defaults write com.apple.LaunchServices LSQuarantine -bool NO
+```
+
+Reboot.
+
+https://apple.stackexchange.com/questions/373176/disable-the-use-of-the-com-apple-quarantine-extended-attribute-on-mojave
+
 ## Brew
 
 ```sh
@@ -132,4 +142,10 @@ Copy paste to end
 export CLICOLOR=1
 alias ls='ls -G'
 alias ll='ls -lG'
+```
+
+## htop
+
+```sh
+brew install htop
 ```
