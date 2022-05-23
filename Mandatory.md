@@ -165,3 +165,46 @@ python --version
 .
 Python 3.8.9
 ```
+
+Alias doesn't really work, it isn't a proper install. `which python` returns nothing.
+
+https://www.mediaglasses.blog/2021/10/30/managing-python-on-macos-monterey/
+
+```sh
+brew install pyenv
+```
+
+```sh
+pyenv install 3.10.0
+pyenv global 3.10.0
+pyenv version
+.
+3.10.0 (set by /Users/user.name/.pyenv/version)
+```
+
+```sh
+echo -e $'if command -v pyenv 1>/dev/null 2>&1; then\\n  export PYENV_ROOT="$HOME/.pyenv"\\n  export PATH="$PYENV_ROOT/bin:$PATH"\\n  eval "$(pyenv init --path)"\\n  eval "$(pyenv init -)"\\nfi' >> ~/.bash_profile
+```
+
+This add the following to the `.bash_profile`
+
+```sh
+if command -v pyenv 1>/dev/null 2>&1; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+fi
+```
+
+After opening a new terminal window
+
+```sh
+which python
+.
+/Users/user.name/.pyenv/shims/python
+.
+python --version
+.
+Python 3.10.0
+```
