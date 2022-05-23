@@ -149,3 +149,19 @@ alias ll='ls -lG'
 ```sh
 brew install htop
 ```
+
+# python3 python
+
+Add an alias for `python` in the `.bash_profile`
+
+```sh
+alias python=/usr/bin/python3
+```
+
+Restart shell and check version
+
+```sh
+python --version
+.
+Python 3.8.9
+```
