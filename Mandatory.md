@@ -208,3 +208,68 @@ python --version
 .
 Python 3.10.0
 ```
+
+## Preferences
+
+Dock & Menu Bar
+
+```txt
+uncheck Show recent applications in Dock
+```
+
+## RDP
+
+First install an x11 display manager like `XQuartz`
+
+https://www.xquartz.org/ `XQuartz-2.8.1.dmg`
+
+Log out and back in.
+
+`DISPLAY` environment variable should be available.
+
+```sh
+/private/tmp/com.apple.launchd.ZK8rMh44Vh/org.xquartz:0
+```
+
+```sh
+brew install freerdp
+```
+
+`xfreerdp` will now work.
+
+## wget
+
+```sh
+brew install wget
+.
+wget --version
+GNU Wget 1.21.3 built on darwin21.3.0.
+
+-cares +digest -gpgme +https +ipv6 +iri +large-file -metalink +nls
++ntlm +opie -psl +ssl/openssl
+
+Wgetrc:
+    /opt/homebrew/etc/wgetrc (system)
+Locale:
+    /opt/homebrew/Cellar/wget/1.21.3/share/locale
+Compile:
+    clang -DHAVE_CONFIG_H -DSYSTEM_WGETRC="/opt/homebrew/etc/wgetrc"
+    -DLOCALEDIR="/opt/homebrew/Cellar/wget/1.21.3/share/locale" -I.
+    -I../lib -I../lib -I/opt/homebrew/opt/openssl@1.1/include
+    -I/opt/homebrew/Cellar/libidn2/2.3.2/include -DNDEBUG -g -O2
+Link:
+    clang -I/opt/homebrew/Cellar/libidn2/2.3.2/include -DNDEBUG -g -O2
+    -L/opt/homebrew/Cellar/libidn2/2.3.2/lib -lidn2
+    -L/opt/homebrew/opt/openssl@1.1/lib -lssl -lcrypto -ldl -lz
+    ../lib/libgnu.a -liconv -lintl -Wl,-framework -Wl,CoreFoundation
+    -lunistring
+
+Copyright (C) 2015 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later
+<http://www.gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Originally written by Hrvoje Niksic <hniksic@xemacs.org>.
+Please send bug reports and questions to <bug-wget@gnu.org>.
+```
