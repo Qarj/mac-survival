@@ -279,3 +279,9 @@ Please send bug reports and questions to <bug-wget@gnu.org>.
 ```sh
  brew install cmake
 ```
+
+## Turn off Spotlight indexing for code folders
+
+System Preferences -> Spotlight -> Privacy -> +
+
+Will save enormous cpu.
