@@ -54,4 +54,6 @@ Run the installer
 
 ```sh
 WINEARCH=win64 WINEPREFIX=~/wine/wine64 wine64 npp.exe
+WINEARCH=win64 WINEPREFIX=~/wine/wine64 wine64 start /unix npp.exe
+
 ```
