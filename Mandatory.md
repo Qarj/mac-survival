@@ -273,3 +273,9 @@ There is NO WARRANTY, to the extent permitted by law.
 Originally written by Hrvoje Niksic <hniksic@xemacs.org>.
 Please send bug reports and questions to <bug-wget@gnu.org>.
 ```
+
+## cmake
+
+```sh
+ brew install cmake
+```
