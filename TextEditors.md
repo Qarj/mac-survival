@@ -51,3 +51,10 @@ Install from https://brackets.io/ - was version `2.0.1`
 Under `File` menu there is `Install Command Line Shortcut`, `brackets .` will then be possible.
 
 Closing the brackets window will remove it from the dock.
+
+## Ultraedit
+
+```sh
+sudo mkdir /usr/local/bin
+sudo ln -s /Applications/UltraEdit.app/Contents/MacOS/UltraEdit /usr/local/bin/uem
+```
