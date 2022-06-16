@@ -9,6 +9,10 @@
 
 ## vscode keybindings.json
 
+https://code.visualstudio.com/docs/getstarted/keybindings
+
+To open `keybindings.json` File/Code->Preferences->Keyboard Shortcuts then Click icon on top right corner that says "Open Keyboard Shortcuts(JSON)" when you hover the little icon with the paper and arrow.
+
 ```json
 // Place your key bindings in this file to override the defaults
 [
@@ -21,6 +25,22 @@
     "key": "cmd+.",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+numpad4",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+numpad4",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "cmd+numpad6",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+numpad6",
+    "command": "workbench.action.navigateForward"
   }
 ]
 ```
