@@ -79,6 +79,12 @@ chsh -s /bin/bash
 
 If you don't change the shell, git might give strange error messages.
 
+Silence nag regarding change to zsh in `.bash_profile`
+
+```sh
+export BASH_SILENCE_DEPRECATION_WARNING=1
+```
+
 Change prompt to format of `user.name@COMPUTERNAME:~/git/mac-survival`
 
 ```sh
@@ -103,7 +109,7 @@ Or for a simpler prompt
 export PS1='\w$ '
 ```
 
-# Disable com.apple.quarantine extended attribute for downloaded files by Brew and others
+## Disable com.apple.quarantine extended attribute for downloaded files by Brew and others
 
 ```sh
 sudo defaults write com.apple.LaunchServices LSQuarantine -bool NO
