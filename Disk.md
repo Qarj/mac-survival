@@ -11,3 +11,11 @@ iostat -w1
     0.00    0  0.00   8  6 86  2.11 2.50 2.58
     0.00    0  0.00   8  6 86  2.11 2.50 2.58
 ```
+
+## zip folders ingoring some
+
+Double quotes are needed.
+
+```sh
+zip -r my-project.zip . -x "node_modules/*" "test-reports*"
+```
