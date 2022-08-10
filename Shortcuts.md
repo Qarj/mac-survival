@@ -16,51 +16,56 @@ To open `keybindings.json` File/Code->Preferences->Keyboard Shortcuts then Click
 ```json
 // Place your key bindings in this file to override the defaults
 [
-  {
-    "key": "ctrl+m",
-    "command": "editor.action.triggerParameterHints",
-    "when": "editorHasSignatureHelpProvider && editorTextFocus"
-  },
-  {
-    "key": "cmd+m",
-    "command": "editor.action.triggerParameterHints",
-    "when": "editorHasSignatureHelpProvider && editorTextFocus"
-  },
-  {
-    "key": "ctrl+,",
-    "command": "editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+,",
-    "command": "editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+.",
-    "command": "editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+.",
-    "command": "editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+numpad4",
-    "command": "workbench.action.navigateBack"
-  },
-  {
-    "key": "ctrl+numpad4",
-    "command": "workbench.action.navigateBack"
-  },
-  {
-    "key": "cmd+numpad6",
-    "command": "workbench.action.navigateForward"
-  },
-  {
-    "key": "ctrl+numpad6",
-    "command": "workbench.action.navigateForward"
-  }
+    {
+        "key": "ctrl+m",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "cmd+m",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+,",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+.",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+numpad4",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+numpad4",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "cmd+numpad6",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+numpad6",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "cmd+r",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    }
 ]
 ```
