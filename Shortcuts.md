@@ -1,11 +1,13 @@
 # Shortcuts, assuming CTRL and CMD keys are swapped
 
-| Shortcut               | Description                       |
-| ---------------------- | --------------------------------- |
-| CTRL + SHIFT + CMD + 4 | Clip screen directly to clipboard |
-| CTRL + R               | Refresh browse page               |
-| CTRL + SHIFT + B       | Toggle bookmarks bar              |
-| CTRL + SHIFT + G       | Open root in Finder               |
+| Shortcut               | Description                          |
+| ---------------------- | ------------------------------------ |
+| CTRL + SHIFT + CMD + 4 | Clip screen directly to clipboard    |
+| CTRL + SHIFT + 4       | Clip screen to to file on Desktop    |
+| CTRL + SHIFT + 3       | Save whole screen to file on Desktop |
+| CTRL + R               | Refresh browse page                  |
+| CTRL + SHIFT + B       | Toggle bookmarks bar                 |
+| CTRL + SHIFT + G       | Open root in Finder                  |
 
 ## vscode keybindings.json
 
