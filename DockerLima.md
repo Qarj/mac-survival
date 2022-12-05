@@ -311,4 +311,13 @@ brew uninstall lima
 .
 Uninstalling /opt/homebrew/Cellar/lima/0.11.2... (57 files, 32.6MB)
 brew uninstall docker
+rm -rf ~/.lima ~/Library/Caches/lima
+```
+
+Remove environment variables from .bash_profile
+
+```sh
+# Docker
+export DOCKER_DEFAULT_PLATFORM="linux/arm64"
+export DOCKER_HOST="unix://$HOME/.lima/docker.sock"
 ```
