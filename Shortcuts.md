@@ -71,3 +71,7 @@ To open `keybindings.json` File/Code->Preferences->Keyboard Shortcuts then Click
     }
 ]
 ```
+
+## Sublime text Find and Replace
+
+CTRL + ALT + F
