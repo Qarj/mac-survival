@@ -230,6 +230,18 @@ python -m venv ./rasa
 source ./rasa/bin/activate
 ```
 
+Update pip
+
+```sh
+pip --version
+.
+pip 22.0.4 from /Users/user.name/rasa/lib/python3.9/site-packages/pip (python 3.9)
+.
+pip install -U pip
+.
+pip 22.3.1 from /Users/user.name/rasa/lib/python3.9/site-packages/pip (python 3.9)
+```
+
 ## Preferences
 
 Dock & Menu Bar
