@@ -222,6 +222,21 @@ pyenv install 3.9.13
 pyenv global 3.9.13
 ```
 
+Upgrade setup tools
+
+```sh
+python -m pip install --upgrade setuptools
+```
+
+Add environment variable to `.bash_profile`
+
+```sh
+export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=true
+export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=true
+```
+
+This tells the build system to use the system OpenSSL and zlib libraries instead of the bundled ones.
+
 ## Create a virtual environment for Rasa X
 
 ```sh
