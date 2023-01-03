@@ -215,6 +215,21 @@ python --version
 Python 3.10.0
 ```
 
+## Python 3.9.13 for Rasa X
+
+```sh
+pyenv install 3.9.13
+pyenv global 3.9.13
+```
+
+## Create a virtual environment for Rasa X
+
+```sh
+cd $HOME
+python -m venv ./rasa
+source ./rasa/bin/activate
+```
+
 ## Preferences
 
 Dock & Menu Bar
