@@ -59,3 +59,12 @@ The following was installed:
 .NET Runtime 6.0.11
 ASP.NET Core Runtime 6.0.11
 ```
+
+## Resolving SSL issues
+
+Run these commands one at a time
+
+```sh
+dotnet dev-certs https --clean
+dotnet dev-certs https --trust
+```
