@@ -333,3 +333,9 @@ Please send bug reports and questions to <bug-wget@gnu.org>.
 System Preferences -> Spotlight -> Privacy -> +
 
 Will save enormous cpu.
+
+## neofetch
+
+```sh
+brew install neofetch
+```

@@ -97,3 +97,11 @@ See 'docker run --help'.
 ```
 
 Had to remove environment variable `DOCKER_HOST` to get it to work.
+
+## Uninstall Docker Desktop
+
+1. Start Docker
+2. Click on the Docker icon in the menu bar
+3. Click on `Preferences`
+4. Find the uninstall option, might need to click on the other icon that looks like preferences
+5. Go into Finder / Applications, drag the Docker app to the trash
