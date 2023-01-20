@@ -339,3 +339,9 @@ Will save enormous cpu.
 ```sh
 brew install neofetch
 ```
+
+## telnet
+
+```sh
+brew install telnet
+```
