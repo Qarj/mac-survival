@@ -16,3 +16,14 @@ After installation is complete, debug logs are written to `/var/log/install.log`
 aws --version
 aws-cli/2.9.15 Python/3.9.11 Darwin/21.6.0 exe/x86_64 prompt/off
 ```
+
+## saml2aws
+
+```sh
+brew install saml2aws
+sam2aws --version
+.
+2.36.2
+```
+
+Then create a `$HOME/.saml2aws` configuration file.

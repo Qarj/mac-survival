@@ -47,3 +47,21 @@ errors.
 ### nginx DNS resolution
 
 Under the `resolve` directive, add `ipv6=off;` to disable IPv6.
+
+### possible networking fix
+
+When running the container, add the following flag:
+
+```sh
+--add-host=host.docker.internal:IP_OF_HOST
+```
+
+where `IP_OF_HOST` is the IP address of the host machine.
+
+### another possible networking fix
+
+Copy host resolver to rancher vm
+
+```sh
+rdctl shell sudo bash -c "echo \"$(cat /etc/resolv.conf)\" >/etc/resolv.conf"
+```
