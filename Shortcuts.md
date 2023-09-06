@@ -1,16 +1,18 @@
 # Shortcuts, assuming CTRL and CMD keys are swapped
 
-| Shortcut                                    | Description                          |
-| ------------------------------------------- | ------------------------------------ |
-| CTRL + SHIFT + CMD + 4                      | Clip screen directly to clipboard    |
-| CTRL + SHIFT + 4                            | Clip screen to to file on Desktop    |
-| CTRL + SHIFT + 3                            | Save whole screen to file on Desktop |
-| CTRL + R                                    | Refresh browse page                  |
-| CTRL + SHIFT + B                            | Toggle bookmarks bar                 |
-| CTRL + SHIFT + G                            | Open root in Finder                  |
-| CTRL + backtick                             | Switch between tabs                  |
-| CTRL + tab                                  | Switch open apps                     |
-| ALT + click while hovering app icon in dock | Tab cycling                          |
+| Shortcut                                    | Description                            |
+| ------------------------------------------- | -------------------------------------- |
+| CTRL + SHIFT + CMD + 4                      | Clip screen directly to clipboard      |
+| CTRL + SHIFT + 4                            | Clip screen to to file on Desktop      |
+| CTRL + SHIFT + 3                            | Save whole screen to file on Desktop   |
+| CTRL + R                                    | Refresh browse page                    |
+| CTRL + SHIFT + B                            | Toggle bookmarks bar                   |
+| CTRL + SHIFT + G                            | Open root in Finder                    |
+| CTRL + backtick                             | Switch between tabs                    |
+| CTRL + tab                                  | Switch open apps                       |
+| ALT + click while hovering app icon in dock | Tab cycling                            |
+| Left Windows Key + Up Arrow                 | Show all windows                       |
+| Left Windows Key + Down Arrow               | Show all windows from same application |
 
 ## vscode keybindings.json
 
