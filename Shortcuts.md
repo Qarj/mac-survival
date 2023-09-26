@@ -13,6 +13,7 @@
 | ALT + click while hovering app icon in dock | Tab cycling                            |
 | Left Windows Key + Up Arrow                 | Show all windows                       |
 | Left Windows Key + Down Arrow               | Show all windows from same application |
+| CTRL + Left Windows + F                     | Toggle full screen                     |
 
 ## vscode keybindings.json
 
