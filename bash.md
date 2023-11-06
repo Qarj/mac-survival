@@ -8,3 +8,9 @@ if [ "$(uname)" == "Darwin" ]; then
   exit 0
 fi
 ```
+
+## screen capture with delay
+
+```sh
+screencapture -C -T5 $HOME/Desktop/ScreenCap.png
+```
