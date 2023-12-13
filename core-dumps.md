@@ -8,3 +8,15 @@ ulimit -c unlimited
 ```
 
 The ulimit only works for the current shell.
+
+View the core dump
+
+```sh
+lldb -c /cores/core.22870
+```
+
+Then run a backtrace
+
+```sh
+bt
+```
