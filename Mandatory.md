@@ -44,12 +44,14 @@ At time of writing it was version v14.4.0 being used with macOS Monterey Version
 
 For the DAS Keyboard Model S, these remappings had to be made (using British - PC)
 
-```
+```txt
 left_command left_control
 left_control left_command
 non_us_backslash grave_accent_and_tilde
 grave_accent_and_tilde non_us_backslash
 ```
+
+Ensure the Virtual keyboard type is set to `ANSI`.
 
 ## Mouse
 
