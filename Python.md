@@ -65,3 +65,9 @@ Add `export PATH="/Users/user.name/.local/bin:$PATH"` to your shell configuratio
 ```sh
 poetry --version
 ```
+
+## Tk
+
+```sh
+brew install tcl-tk
+```
