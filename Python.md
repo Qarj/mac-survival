@@ -52,3 +52,16 @@ asdf install python 3.9.7
 asdf global python 3.9.7
 asdf shell python 3.9.7
 ```
+
+## Poetry
+
+```sh
+curl -sSL https://install.python-poetry.org | python -
+poetry --version
+```
+
+Add `export PATH="/Users/user.name/.local/bin:$PATH"` to your shell configuration file.
+
+```sh
+poetry --version
+```
