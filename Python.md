@@ -42,3 +42,13 @@ source "$(brew --prefix asdf)/libexec/asdf.sh"
 asdf shell python 3.8.15
 python --version
 ```
+
+## Change Python version with asdf
+
+```sh
+source "$(brew --prefix asdf)/libexec/asdf.sh"
+
+asdf install python 3.9.7
+asdf global python 3.9.7
+asdf shell python 3.9.7
+```
