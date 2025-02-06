@@ -12,7 +12,7 @@
     },
     "workbench.colorTheme": "Dark+ (WoW)",
     "terminal.integrated.inheritEnv": false,
-    "diffEditor.hideUnchangedRegions.enabled": true,
+    "diffEditor.hideUnchangedRegions.enabled": false,
     "git-blame.config.showBlameInline": false,
     "git-blame.configs.startBlameProcessOnSave": false,
     "git-blame.config.inlineBlame.hoverMessage.activeLine": false,
