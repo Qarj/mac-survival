@@ -347,3 +347,9 @@ brew install neofetch
 ```sh
 brew install telnet
 ```
+
+## ripgrep
+
+```sh
+brew install ripgrep
+```
