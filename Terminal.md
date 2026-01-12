@@ -29,3 +29,13 @@ open -a /System/Applications/Utilities/Terminal.app .
 ## Jump between terminal windows
 
 `CTRL-left arrow` or `CTRL-right arrow` if using remapped keys, otherwise `CMD-left arrow` or `CMD-right arrow`
+
+## Fix bracketed paste errors
+
+If seeing nonsense like this on paste `00~stty sane -ixon01~`:
+
+```sh
+stty sane -ixon
+printf '\e[?2004l'   # disable bracketed paste mode
+reset
+```
