@@ -26,8 +26,8 @@ Open disk image then drag `Sublime Text.app` to Applications.
 Right click running app select `Options` -> `Keep in Dock`
 
 ```sh
-sudo mkdir /usr/local/bin
-sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+sudo mkdir -p /usr/local/bin
+sudo ln -sf "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 ```
 
 ```txt

@@ -14,7 +14,7 @@ After installation is complete, debug logs are written to `/var/log/install.log`
 
 ```sh
 aws --version
-aws-cli/2.9.15 Python/3.9.11 Darwin/21.6.0 exe/x86_64 prompt/off
+aws-cli/2.33.20 Python/3.13.11 Darwin/25.2.0 exe/arm64
 ```
 
 ## saml2aws

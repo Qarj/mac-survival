@@ -2,6 +2,18 @@
 
 https://learn.microsoft.com/en-us/dotnet/core/install/macos
 
+After running the install, make sure the permissions are OK.
+
+```sh
+sudo chmod 755 /usr/local/share
+```
+
+Also add it to path in both .zprofile and .zshrc
+
+```sh
+export PATH="/usr/local/share/dotnet:$PATH"
+```
+
 ## .NET 7.0
 
 Donwload Arm64 installer https://dotnet.microsoft.com/en-us/download/dotnet/7.0

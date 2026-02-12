@@ -35,6 +35,8 @@ Note these are the default translations if you don't change the modifier keys:
 
 ## Karabiner-Elements keyboard modifier
 
+/Applications/.Karabiner-VirtualHIDDevice-Manager.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Manager activate
+
 Alternatively install `Karabiner-Elements` from https://karabiner-elements.pqrs.org/
 
 After enabling all the security, it will take over the remapping and the remapping of control keys in the system
@@ -327,7 +329,7 @@ Please send bug reports and questions to <bug-wget@gnu.org>.
 ## cmake
 
 ```sh
- brew install cmake
+brew install cmake
 ```
 
 ## Turn off Spotlight indexing for code folders
