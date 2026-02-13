@@ -31,9 +31,11 @@ Note these are the default translations if you don't change the modifier keys:
 | Command               | Windows      |
 | Command Option Escape | CTRL ALT DEL |
 | Command Shift 3       | Print Screen |
-| Command spacebar      | Windows      |
+| Command space bar     | Windows      |
 
 ## Karabiner-Elements keyboard modifier
+
+Note: Blocked by install, use alternative option Ukelele
 
 /Applications/.Karabiner-VirtualHIDDevice-Manager.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Manager activate
 
@@ -44,7 +46,7 @@ preferences will be ignored.
 
 At time of writing it was version v14.4.0 being used with macOS Monterey Version 12.4.
 
-For the DAS Keyboard Model S, these remappings had to be made (using British - PC)
+For the DAS Keyboard Model S, these re-mappings had to be made (using British - PC)
 
 ```txt
 left_command left_control
@@ -54,6 +56,39 @@ grave_accent_and_tilde non_us_backslash
 ```
 
 Ensure the Virtual keyboard type is set to `ANSI`.
+
+## Ukelele Keyboard Layout Editor for macOS
+
+1. Install Ukelele from https://software.sil.org/ukelele/
+
+2. Make sure the currently active keyboard is the best available - e.g. `British - PC`
+
+3. From the File menu, select `New From Current Input Source`.
+
+An Untitled window opens with a heading `Keyboard Layouts in this collection`.
+
+There will be a line like `British - PC copy 3` double click on it.
+
+Find a key you want to remap - for example, if the backslash key is in the wrong place,
+double click on `\` then type a `\`.
+
+Hold down the shift key for the shift key version. Then double click on the key while holding shift.
+
+Note - you generally remap a key to itself, so you map `\` to `\` and "|" to "|"
+and the same for the paired wrong key, and even though it doesn't seem to make
+much sense it does actually have the affect of swapping the keys.
+
+4. Save the layout, e.g. to Documents as `British - PC copy 3`.
+
+5. Check the bundle is present, then copy recursively to the correct location
+
+```
+ls "$HOME/Documents/British - PC copy 3.bundle"
+cp -R "$HOME/Documents/British - PC copy 3.bundle" "$HOME/Library/Keyboard Layouts/"
+ls "$HOME/Library/Keyboard Layouts/"
+```
+
+6. Log out and back in, then select it in Settings / Keyboard
 
 ## Mouse
 
