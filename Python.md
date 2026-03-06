@@ -1,73 +1,60 @@
 # Python
 
-## asdf - Python version manager - Ansible
+Set up Python 3.12.12 as the default Python via pyenv on Mac:
 
-https://asdf-vm.com/guide/getting-started.html#_3-install-asdf
+We don't need this to begin with, might want it later.
+
+1. Ensure brew is installed (it should be already).
+
+2. Ensure brew is on your PATH for your shell (should already be done).
+
+- For zsh (default on modern macOS):
 
 ```sh
-brew install asdf
-asdf plugin add python
-.
-initializing plugin repository...Cloning into '/Users/user.name/.asdf/repository'...
-.
-asdf list python
-.
-  No versions installed
-.
-asdf install python 3.8.15
-.
-Downloading python-build...
-Cloning into '/Users/user.name/.asdf/plugins/python/pyenv'...
-remote: Enumerating objects: 22652, done.
-remote: Counting objects: 100% (227/227), done.
-remote: Compressing objects: 100% (116/116), done.
-remote: Total 22652 (delta 142), reused 174 (delta 106), pack-reused 22425
-Receiving objects: 100% (22652/22652), 4.69 MiB | 1009.00 KiB/s, done.
-Resolving deltas: 100% (15290/15290), done.
-python-build 3.8.15 /Users/user.name/.asdf/installs/python/3.8.15
-python-build: use openssl@1.1 from homebrew
-python-build: use readline from homebrew
-Downloading Python-3.8.15.tar.xz...
--> https://www.python.org/ftp/python/3.8.15/Python-3.8.15.tar.xz
-Installing Python-3.8.15...
-python-build: use readline from homebrew
-python-build: use zlib from xcode sdk
-Installed Python-3.8.15 to /Users/user.name/.asdf/installs/python/3.8.15
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-Now add to `.bash_profile`:
+3. Install pyenv and build dependencies
 
 ```sh
-source "$(brew --prefix asdf)/libexec/asdf.sh"
-asdf shell python 3.8.15
+brew update
+brew install pyenv
+brew install openssl readline sqlite3 xz zlib tcl-tk
+```
+
+4. Add pyenv init to your shell startup (zsh)
+
+```sh
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zprofile
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zprofile
+echo 'eval "$(pyenv init -)"' >> ~/.zprofile
+```
+
+5. Restart your terminal, or source your profile
+
+```sh
+exec zsh -l
+```
+
+6. Install Python 3.12.12 via pyenv
+
+```sh
+pyenv install 3.12.12
+```
+
+7. Make 3.12.12 the global (default) Python
+
+```sh
+pyenv global 3.12.12
+```
+
+8. Verify
+
+```sh
 python --version
+which python
+pyenv versions
 ```
 
-## Change Python version with asdf
-
-```sh
-source "$(brew --prefix asdf)/libexec/asdf.sh"
-
-asdf install python 3.9.7
-asdf global python 3.9.7
-asdf shell python 3.9.7
-```
-
-## Poetry
-
-```sh
-curl -sSL https://install.python-poetry.org | python -
-poetry --version
-```
-
-Add `export PATH="/Users/user.name/.local/bin:$PATH"` to your shell configuration file.
-
-```sh
-poetry --version
-```
-
-## Tk
-
-```sh
-brew install tcl-tk
-```
+You should see Python 3.12.12 and the shim path under ~/.pyenv/shims.

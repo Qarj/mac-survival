@@ -390,3 +390,20 @@ brew install telnet
 ```sh
 brew install ripgrep
 ```
+
+## iTerm2
+
+```sh
+brew install --cask iterm2
+open /Applications/iTerm.app
+```
+
+Setting iTerm to open new session at previous session current directory:
+
+Method 1: The Native iTerm2 Setting (Recommended)
+Open iTerm2 and go to iTerm2 > Settings (or press Cmd + ,).
+Click on the Profiles tab, then select your active profile (usually "Default").
+Click the General sub-tab.
+Under the Working Directory section, change the selection to Reuse previous session's directory.
+Optional: To ensure this works for everything, click Advanced Configuration > Edit and ensure new windows, tabs, and split panes are all set to reuse the directory.
++4
